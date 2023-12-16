@@ -205,6 +205,11 @@ h1.logo {
   color: #452819;
 }
 
+.card2 h3 {
+  color: #452819;
+  font-size: 1.5em;
+}
+
 .card2 p {
   margin-bottom: 10px;
   font-family: Acme, sans-serif;
@@ -229,17 +234,13 @@ h1.logo {
   margin-top: 20px;
 }
 
-.form-izquierda,
-.form-derecha {
-  width: 48%;
-}
-
 .form-izquierda {
   width: 30%;
   background-color: #f7f7f7;
   padding: 15px;
   border-radius: 8px;
   margin-right: 20px;
+  border: 2px solid #452819;
 }
 
 .form-izquierda h2 {
@@ -287,7 +288,6 @@ h1.logo {
   background-color: #b28770;
   color: #452819;
   border-radius: 5px;
-  border: none;
   cursor: pointer;
   font-family: Acme, sans-serif;
   transition: background-color 0.3s ease-in-out;
@@ -316,7 +316,7 @@ h1.logo {
 
 .form-derecha legend {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
   color: #452819;
   margin-bottom: 10px;
 }
@@ -338,7 +338,7 @@ h1.logo {
   padding: 10px;
   border: 1px solid #452819;
   border-radius: 4px;
-  background-color: rgba(176, 224, 230, 0.5);
+  background-color: rgba(201, 171, 134, 0.5);
   max-height: 150px;
   overflow-y: auto;
   color: #452819;
@@ -382,14 +382,13 @@ h1.logo {
 
 .texto-envio h2 {
   font-family: Acme, sans-serif;
-  font-size: 55px;
+  font-size: 58px;
   color: #452819;
 }
 
 .texto-envio p {
-  background-color: #B28770;
   font-family: Acme, sans-serif;
-  font-size: 35px;
+  font-size: 40px;
   color: #452819;
 }
 
@@ -459,6 +458,7 @@ h1.logo {
 
 .footer-content .column:nth-child(1) {
   justify-self: start; 
+  font-family: Acme, sans-serif;
 }
 
 .footer-content .column:nth-child(2) {
@@ -540,10 +540,10 @@ input[type="email"] {
 .copyright-bar {
   background-color: #D9D9D9;
   font-family: Acme, sans-serif;;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   color: #452819;
-  padding: 10px 0;
+  padding: 8px 0;
 }
 
 .boton {
