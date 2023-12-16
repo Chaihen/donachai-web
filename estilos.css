@@ -205,11 +205,6 @@ h1.logo {
   color: #452819;
 }
 
-.card2 h3 {
-  color: #452819;
-  font-size: 1.5em;
-}
-
 .card2 p {
   margin-bottom: 10px;
   font-family: Acme, sans-serif;
@@ -338,7 +333,7 @@ h1.logo {
   padding: 10px;
   border: 1px solid #452819;
   border-radius: 4px;
-  background-color: rgba(201, 171, 134, 0.5);
+  background-color: rgba(140, 111, 76, 0.5);
   max-height: 150px;
   overflow-y: auto;
   color: #452819;
@@ -485,7 +480,7 @@ h1.logo {
 
 .footer-logo {
   color: #452819;
-  font-size: 50px;
+  font-size: 40px;
   font-family: Courgette, cursive;
   font-weight: 400;
   margin-bottom: 10px;
