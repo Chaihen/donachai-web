@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dona Chai: Donas Esponjosas Y Deliciosas</title>
+    <meta name="description" content="Las mejores donas de la región hechas con ingredientes de calidad y con mucho amor">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#8f7ada">
+    <link rel="icon" href="imagenes/donuts.jpg" type="image/jpg">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+        <h1 class="logo">DonaChai</h1>
+        <ul class="enlaces">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="somos.html">Quienes Somos</a></li>
+            <li><a href="envios.html">Envios</a></li>
+            <li><a href="comprar.html">Comprar</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="stock">
+    <div class="form-izquierda">
+    <h2>Stock de Donuts</h2>
+    <P>Verifica la disponibilidad de nuestros productos aqui</P>
+    <label for="donaChocolate">Donuts Chocolate Negro</label>
+    <input type="number" id="cantidadChocolate" name="donaChocolate" min="1" value= "1"><br><br>
+
+    <label for="donaBlanco">Donuts Chocolate Blanco</label>
+    <input type="number" id="cantidadBlanco" name="donaBlanco" min="1" value="1"><br><br>
+
+    <label for="corazones">Donuts Heart</label>
+    <input type="number" id="cantidadCorazones" name="corazones" min="1" value="1"><br><br>
+
+    <label for="donaOriginal">Donuts Original</label>
+    <input type="number" id="cantidadOriginal" name="donaOriginal" min="1" value="1"><br><br>
+
+    <label for="roles">Cinnamon Rolls</label>
+    <input type="number" id="cantidadRol" name="roles" min="1" value="1">
+
+    <button onclick="comprobarDisponibilidad()">Verificar Stock</button>
+
+    <p id="muestraDisponibilidad"></p>
+</div>
+
+<div class="form-derecha">
+    <fieldset>
+        <legend><strong>Personaliza tu Pedido</strong></legend>
+        <select id="donuts" name="listaDesplegable" multiple>
+          <optgroup label="Donuts">
+            <option value="clasico">Clásico</option>
+            <option value="chocolate Negro">Chocolate Negro</option>
+            <option value="chocolate Blanco">Chocolate Blanco</option>
+            <option value="colores">Colores</option>
+          </optgroup>
+        </select>
+        <select id="coberturas" name="listaDesplegable" multiple>
+          <optgroup label="Coberturas">
+            <option value="oreo">Oreo</option>
+            <option value="arequipe">Arequipe</option>
+            <option value="frutos rojos">Frutas Rojas</option>
+            <option value="fondant">Fondant</option>
+          </optgroup>
+        </select>
+        <select id="lluvias" name="listaDesplegable" multiple>
+          <optgroup label="Lluvias">
+            <option value="colores">Colores</option>
+            <option value="estrellas">Estrellas</option>
+            <option value="maní">Maní</option>
+          </optgroup>
+        </select>
+        <div id="seleccion"></div>
+        <button class="enviarPedido" onclick="enviarPedido()">Enviar Pedido</button>
+      </fieldset>
+    </div>
+    </section> 
+<footer class="footer">
+  <div class="footer-content">
+      <div class="column">
+        <h3>¡Aumenta tus conocimientos sobre Donuts en esta sección!</h3>
+          <ul>
+              <li><a href="https://www.cnnbrasil.com.br/viagemegastronomia/noticias-sobre/donuts/" target="_blank" class="footer-link">Notícias</a></li>
+              <li><a href="https://lemundo.com.br/curiosidades-sobre-donuts/" target="_blank" class="footer-link">Curiosidades</a></li>
+              <li><a href="https://www.youtube.com/watch?v=UdlCH4F2oRg" target="_blank" class="footer-link">Dulces Cuidados</a></li>
+          </ul>
+          <div class="social-icons">
+            <h3>Visita nuestras redes sociales</h3>
+              <a href="https://www.facebook.com/donachaiSC?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-square"></i></a>
+              <a href="https://wa.me/+5516996330054?text=Quisiera información adicional" target="_blank"><i class="fab fa-whatsapp-square"></i></a>
+              <a href="https://www.instagram.com/https://instagram.com/chaihenop?igshid=ZDc4ODBmNjlmNQ==" target="_blank"><i class="fab fa-instagram-square"></i></a>
+          </div>
+      </div>
+      <div class="column">
+          <h2 class="footer-logo">DonaChai</h2>
+          <ul>
+              <li><a href="index.html" class="footer-link">Inicio</a></li>
+              <li><a href="productos.html" class="footer-link">Produtos</a></li>
+              <li><a href="somos.html" class="footer-link">Quienes Somos</a></li>
+              <li><a href="envios.html" class="footer-link">Envios</a></li>
+              <li><a href="comprar.html" class="footer-link">Comprar</a></li>
+          </ul>
+      </div>
+      <div class="column">
+          <div class="footer-contacto">
+              <h3>Contacto</h3>
+              <p><i class="fas fa-map-marker-alt"></i> Calle Antonio Mascaro #144 Barrio Azulville II</p>
+              <p><i class="fas fa-phone-alt"></i> +55 16 996330054</p>
+              <p><i class="far fa-envelope"></i> gchaihen@gmail.com</p>
+              <label for="suscribir">Suscríbete a nuestras novedades</label>
+              <input type="email" name="email" id="email" value="Introduce tu email">
+              <button type="submit" class="boton">Enviar</button>
+          </div>
+      </div>
+  </div>
+</footer>
+<div class="copyright-bar">
+  <p>&copy; Derechos Reservados, Chaihen González</p>
+</div>
+<script src="javascript.js"></script>
+</body>
+</html>
